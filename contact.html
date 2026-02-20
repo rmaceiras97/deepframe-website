@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Contact Us | DeepFrame Media — Miami Marketing Agency</title>
+  <meta name="description" content="Get in touch with DeepFrame Media. We serve businesses across Miami, Broward, Kendall, Homestead, and all of South Florida. Request a free consultation today." />
+  <meta name="keywords" content="contact DeepFrame Media, Miami marketing agency contact, web design quote Miami, brand identity quote South Florida" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.deepframemedia.com/contact.html" />
+
+  <meta property="og:title" content="Contact DeepFrame Media | Start Your Project" />
+  <meta property="og:description" content="Ready to build something great? Contact Miami's premier marketing agency for a free consultation." />
+  <meta property="og:url" content="https://www.deepframemedia.com/contact.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Schema.org Contact Page -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact DeepFrame Media",
+    "url": "https://www.deepframemedia.com/contact.html",
+    "mainEntity": {
+      "@type": "MarketingAgency",
+      "name": "DeepFrame Media",
+      "email": "info@deepframemedia.com",
+      "telephone": "+17868819439",
+      "openingHours": "Mo-Su 00:00-23:59",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Agent Automation" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Development" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Marketing" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Meta & Google Ads Management" } }
+        ]
+      },
+      "areaServed": ["Miami", "Broward", "Kendall", "Homestead", "Miami-Dade", "South Florida"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Miami",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      }
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    .service-area-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .service-area-tag {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.6);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 5px 12px;
+      border-radius: 100px;
+    }
+    .faq-item {
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      padding: 20px 0;
+    }
+    .faq-question {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--white);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .faq-icon {
+      color: var(--orange);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      transition: transform var(--transition);
+    }
+    .faq-answer {
+      font-size: 0.9rem;
+      color: var(--grey-light);
+      line-height: 1.7;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+    }
+    .faq-item.open .faq-answer {
+      max-height: 200px;
+      padding-top: 12px;
+    }
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <a href="index.html" class="nav-logo" aria-label="DeepFrame Media Home">
+          <img src="assets/deepframe-logo.png" alt="DeepFrame" class="logo-mark logo-image" />
+          <div class="logo-text">
+            <span class="logo-name">DEEPFRAME</span>
+            <span class="logo-sub">Media</span>
+          </div>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+          <li><a href="work.html" class="nav-link" data-i18n="nav.work">Work</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="lang-toggle" role="group" data-i18n-aria-label="lang.toggleLabel" aria-label="Language selector">
+          <button type="button" class="lang-btn" data-lang-btn data-lang="en" aria-pressed="true" data-i18n="lang.en">EN</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-lang-btn data-lang="es" aria-pressed="false" data-i18n="lang.es">ES</button>
+        </div>
+        <a href="contact.html" class="btn btn-primary nav-cta" data-i18n="nav.startProject">Start a Project</a>
+        <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <nav class="nav-mobile" id="mobileMenu" aria-label="Mobile navigation">
+    <a href="index.html" class="nav-mobile-link" data-i18n="nav.home">Home</a>
+    <a href="work.html" class="nav-mobile-link" data-i18n="nav.work">Work</a>
+    <a href="about.html" class="nav-mobile-link" data-i18n="nav.about">About</a>
+    <a href="contact.html" class="nav-mobile-link" data-i18n="nav.contact">Contact</a>
+    <a href="contact.html" class="btn btn-primary nav-mobile-cta" data-i18n="nav.startProject">Start a Project</a>
+  </nav>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-labelledby="pageTitle">
+      <div class="container">
+        <span class="label fade-up" data-i18n="contact.heroLabel">Get In Touch</span>
+        <h1 class="display-lg mt-16 fade-up stagger-1" id="pageTitle" data-i18n-html="contact.heroTitle">Let's build something<br />you're proud of.</h1>
+        <p class="body-lg mt-16 max-w-2xl fade-up stagger-2" data-i18n="contact.heroDesc">Tell us about your project. We are available 24/7 with practical guidance, clear scope, and next steps.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" aria-labelledby="contactHeading">
+      <div class="container">
+        <h2 class="sr-only" id="contactHeading" data-i18n="contact.sectionHeading">Contact Form and Information</h2>
+        <div class="contact-grid">
+
+          <!-- Left: Info -->
+          <div class="contact-info fade-up">
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-info-label" data-i18n="contact.emailUs">Email Us</div>
+                <a href="mailto:info@deepframemedia.com" class="contact-info-value" style="transition:var(--transition);">info@deepframemedia.com</a>
+                <div class="contact-info-sub" data-i18n="contact.available247">Available 24/7</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-info-label" data-i18n="contact.phone">Phone</div>
+                <a href="tel:+17868819439" class="contact-info-value">786-881-9439</a>
+                <div class="contact-info-sub" data-i18n="contact.available247">Available 24/7</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-info-label" data-i18n="contact.serviceArea">Service Area</div>
+                <div class="contact-info-value" data-i18n="footer.location">Miami &amp; South Florida</div>
+                <div class="contact-info-sub" data-i18n="contact.serviceAreaSub">We serve all surrounding areas</div>
+                <div class="service-area-tags" aria-label="Service areas">
+                  <span class="service-area-tag">Miami</span>
+                  <span class="service-area-tag">Brickell</span>
+                  <span class="service-area-tag">Wynwood</span>
+                  <span class="service-area-tag">Kendall</span>
+                  <span class="service-area-tag">Homestead</span>
+                  <span class="service-area-tag">Broward</span>
+                  <span class="service-area-tag">Doral</span>
+                  <span class="service-area-tag">Hialeah</span>
+                  <span class="service-area-tag">Coral Gables</span>
+                  <span class="service-area-tag">Miami Beach</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-info-label" data-i18n="contact.hours">Hours</div>
+                <div class="contact-info-value" data-i18n="contact.hoursValue">24/7</div>
+                <div class="contact-info-sub" data-i18n="contact.hoursSub">Always available</div>
+              </div>
+            </div>
+
+            <!-- What to expect -->
+            <div style="background:var(--dark-2); border:1px solid rgba(255,255,255,0.07); border-radius:var(--radius-lg); padding:24px;">
+              <div class="label" style="margin-bottom:12px;" data-i18n="contact.whatNext">What happens next?</div>
+              <ol style="display:flex; flex-direction:column; gap:10px; padding-left:20px; list-style:decimal;">
+                <li style="font-size:0.875rem; color:var(--grey-light);" data-i18n="contact.nextStep1">You submit the form with your project details</li>
+                <li style="font-size:0.875rem; color:var(--grey-light);" data-i18n="contact.nextStep2">We review and reach out with next steps</li>
+                <li style="font-size:0.875rem; color:var(--grey-light);" data-i18n="contact.nextStep3">We schedule a free discovery call</li>
+                <li style="font-size:0.875rem; color:var(--grey-light);" data-i18n="contact.nextStep4">You receive a custom proposal with clear pricing</li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Right: Form -->
+          <div class="fade-up stagger-2">
+            <div class="contact-form">
+              <h2 class="heading-md" style="margin-bottom:8px;" data-i18n="contact.formTitle">Start Your Project</h2>
+              <p style="font-size:0.875rem; color:var(--grey-light); margin-bottom:28px;" data-i18n="contact.formSub">Fill out the form and we'll be in touch shortly. Fields marked * are required.</p>
+
+              <form id="contactForm" name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field" novalidate aria-label="Contact form">
+                <input type="hidden" name="form-name" value="contact" />
+                <p hidden>
+                  <label>Don't fill this out: <input name="bot-field" /></label>
+                </p>
+                <div class="contact-form-progress" aria-label="Form progress">
+                  <div class="contact-form-progress-track"><div class="contact-form-progress-fill" id="contactProgressFill"></div></div>
+                  <div class="contact-form-step-labels">
+                    <span class="contact-form-step-label is-active" data-step-label="0" data-i18n="contact.step1">1. Contact</span>
+                    <span class="contact-form-step-label" data-step-label="1" data-i18n="contact.step2">2. Project</span>
+                    <span class="contact-form-step-label" data-step-label="2" data-i18n="contact.step3">3. Details</span>
+                  </div>
+                </div>
+
+                <div class="contact-form-step is-active" data-form-step="0">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="firstName" class="form-label" data-i18n="contact.firstName">First Name *</label>
+                      <input type="text" id="firstName" name="firstName" class="form-input" placeholder="John" data-i18n-placeholder="contact.placeholderFirstName" required autocomplete="given-name" />
+                    </div>
+                    <div class="form-group">
+                      <label for="lastName" class="form-label" data-i18n="contact.lastName">Last Name *</label>
+                      <input type="text" id="lastName" name="lastName" class="form-input" placeholder="Doe" data-i18n-placeholder="contact.placeholderLastName" required autocomplete="family-name" />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email" class="form-label" data-i18n="contact.email">Email Address *</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="john@yourbusiness.com" data-i18n-placeholder="contact.placeholderEmail" required autocomplete="email" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phone" class="form-label" data-i18n="contact.phoneLabel">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="(305) 555-0100" data-i18n-placeholder="contact.placeholderPhone" autocomplete="tel" />
+                  </div>
+
+                  <div class="contact-form-actions">
+                    <button type="button" class="btn btn-primary form-next" data-next-step="1" data-i18n="contact.next">Next</button>
+                  </div>
+                </div>
+
+                <div class="contact-form-step" data-form-step="1">
+                  <div class="form-group">
+                    <label for="business" class="form-label" data-i18n="contact.business">Business Name *</label>
+                    <input type="text" id="business" name="business" class="form-input" placeholder="Your Business Name" data-i18n-placeholder="contact.placeholderBusiness" required autocomplete="organization" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="service" class="form-label" data-i18n="contact.service">Service Interested In *</label>
+                    <select id="service" name="service" class="form-select" required aria-required="true">
+                      <option value="" disabled selected data-i18n="contact.placeholderService">Select a service...</option>
+                      <option value="ai-agent-automation" data-i18n="contact.serviceAi">AI Agent Automation</option>
+                      <option value="website-development" data-i18n="contact.serviceWeb">Website Development</option>
+                      <option value="marketing" data-i18n="contact.serviceMarketing">Marketing</option>
+                      <option value="meta-google-ads-management" data-i18n="contact.serviceAds">Meta &amp; Google Ads Management</option>
+                      <option value="other" data-i18n="contact.serviceOther">Other / Not Sure Yet</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="budget" class="form-label" data-i18n="contact.budget">Estimated Budget</label>
+                    <select id="budget" name="budget" class="form-select">
+                      <option value="" disabled selected data-i18n="contact.placeholderBudget">Select a range...</option>
+                      <option value="under1k" data-i18n="contact.budgetUnder1k">Under $1,000</option>
+                      <option value="1k-3k" data-i18n="contact.budget1k3k">$1,000 - $3,000</option>
+                      <option value="3k-7k" data-i18n="contact.budget3k7k">$3,000 - $7,000</option>
+                      <option value="7k-15k" data-i18n="contact.budget7k15k">$7,000 - $15,000</option>
+                      <option value="15k+" data-i18n="contact.budget15kPlus">$15,000+</option>
+                    </select>
+                  </div>
+
+                  <div class="contact-form-actions contact-form-actions-between">
+                    <button type="button" class="btn btn-outline form-back" data-prev-step="0" data-i18n="contact.back">Back</button>
+                    <button type="button" class="btn btn-primary form-next" data-next-step="2" data-i18n="contact.next">Next</button>
+                  </div>
+                </div>
+
+                <div class="contact-form-step" data-form-step="2">
+                  <div class="form-group">
+                    <label for="message" class="form-label" data-i18n="contact.message">Tell Us About Your Project *</label>
+                    <textarea id="message" name="message" class="form-textarea" placeholder="Describe your business, what you need, your timeline, or anything that helps us understand your project..." data-i18n-placeholder="contact.placeholderMessage" required aria-required="true"></textarea>
+                  </div>
+
+                  <div class="contact-form-actions contact-form-actions-between">
+                    <button type="button" class="btn btn-outline form-back" data-prev-step="1" data-i18n="contact.back">Back</button>
+                    <button type="submit" class="btn btn-primary form-submit" data-i18n="contact.send">Send Message</button>
+                  </div>
+                </div>
+              </form>
+
+              <!-- Success Message -->
+              <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+                <div class="form-success-icon" aria-hidden="true">✓</div>
+                <h3 style="font-family:var(--font-display); font-size:1.3rem; margin-bottom:8px;" data-i18n="contact.successTitle">Message Sent!</h3>
+                <p style="color:var(--grey-light); font-size:0.9rem;" data-i18n="contact.successBody">Thanks for reaching out. We will review your details and follow up with next steps as soon as possible.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section bg-dark-2" aria-labelledby="faqHeading">
+      <div class="container">
+        <div class="section-header text-center fade-up">
+          <span class="label" data-i18n="contact.faqLabel">Common Questions</span>
+          <h2 class="display-md mt-16" id="faqHeading" data-i18n="contact.faqTitle">Frequently asked</h2>
+        </div>
+
+        <div style="max-width: 720px; margin: 0 auto;" role="list">
+
+          <div class="faq-item fade-up stagger-1" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="contact.faqQ1">How much does a website cost?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" data-i18n="contact.faqA1">Our website projects start at around $1,500 for simple landing pages and range up to $10,000+ for full custom builds with advanced features. We'll give you a clear, fixed quote after our discovery call — no surprises.</div>
+          </div>
+
+          <div class="faq-item fade-up stagger-2" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="contact.faqQ2">How long does a project take?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" data-i18n="contact.faqA2">Most websites are delivered in 2–4 weeks. Brand identity projects typically take 1–3 weeks. Larger projects are broken into clear milestones so you always know what's happening and when.</div>
+          </div>
+
+          <div class="faq-item fade-up stagger-3" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="contact.faqQ3">Do you only work with Miami businesses?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" data-i18n="contact.faqA3">We specialize in Miami, Broward, Kendall, Homestead, and all surrounding South Florida areas. We also work with businesses outside Florida — everything is handled remotely, so location is never a barrier.</div>
+          </div>
+
+          <div class="faq-item fade-up stagger-1" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="contact.faqQ4">What do I need to get started?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" data-i18n="contact.faqA4">Just submit the form above! We'll get on a call to discuss your goals, timeline, and budget. From there, we'll prepare a proposal. You don't need anything prepared for the first call.</div>
+          </div>
+
+          <div class="faq-item fade-up stagger-2" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="contact.faqQ5">Will my website work on mobile?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" data-i18n="contact.faqA5">Absolutely — mobile-first is our design philosophy. We know that most of your South Florida customers will visit your site on their phones, so every website we build is optimized for the best possible mobile experience.</div>
+          </div>
+
+          <div class="faq-item fade-up stagger-3" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="contact.faqQ6">Do you offer ongoing support after launch?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" data-i18n="contact.faqA6">Yes. We offer maintenance plans, SEO monitoring, content updates, and ongoing design work. We're a long-term partner, not a one-and-done shop.</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="DeepFrame Media">
+            <img src="assets/deepframe-logo.png" alt="DeepFrame" class="logo-mark logo-image" />
+            <div class="logo-text">
+              <span class="logo-name">DEEPFRAME</span>
+              <span class="logo-sub">Media</span>
+            </div>
+          </a>
+          <p data-i18n="footer.brandDesc">We build brands that mean business. Miami's go-to marketing agency for website development and brand identity design.</p>
+        </div>
+        <div>
+          <h3 class="footer-heading" data-i18n="footer.navigation">Navigation</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="index.html" class="footer-link" data-i18n="nav.home">Home</a></li>
+            <li><a href="work.html" class="footer-link" data-i18n="footer.ourWork">Our Work</a></li>
+            <li><a href="about.html" class="footer-link" data-i18n="footer.aboutUs">About Us</a></li>
+            <li><a href="contact.html" class="footer-link" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading" data-i18n="footer.services">Services</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="contact.html" class="footer-link" data-i18n="footer.serviceAi">AI Agent Automation</a></li>
+            <li><a href="work.html?filter=website" class="footer-link" data-i18n="footer.serviceWeb">Website Development</a></li>
+            <li><a href="contact.html" class="footer-link" data-i18n="footer.serviceMarketing">Marketing</a></li>
+            <li><a href="contact.html" class="footer-link" data-i18n="footer.serviceAds">Meta &amp; Google Ads Management</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading" data-i18n="footer.contact">Contact</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="mailto:info@deepframemedia.com" class="footer-link">info@deepframemedia.com</a></li>
+            <li><a href="tel:+17868819439" class="footer-link">786-881-9439</a></li>
+            <li><span class="footer-link" data-i18n="footer.available">Available 24/7</span></li>
+            <li><span class="footer-link" data-i18n="footer.location">Miami &amp; South Florida</span></li>
+            <li><a href="contact.html" class="footer-link" data-i18n="footer.startProject">Start a Project</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy" data-i18n-html="footer.copyHtml">© <span id="currentYear">2025</span> DeepFrame Media LLC. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html" class="footer-bottom-link" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="terms.html" class="footer-bottom-link" data-i18n="footer.terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Netlify form stub for deploy-time detection -->
+  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="contact" />
+    <input name="bot-field" />
+    <input type="text" name="firstName" />
+    <input type="text" name="lastName" />
+    <input type="email" name="email" />
+    <input type="tel" name="phone" />
+    <input type="text" name="business" />
+    <select name="service"></select>
+    <select name="budget"></select>
+    <textarea name="message"></textarea>
+  </form>
+
+  <script src="i18n.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        // Open clicked if was closed
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
