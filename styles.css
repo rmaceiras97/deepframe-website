@@ -2005,8 +2005,7 @@ body.promo-open { overflow: hidden; }
 
 /* ── Modal header ────────────────────────────────────────────────── */
 .promo-modal-header {
-  padding-right: 44px; /* clear of absolute close button */
-  padding-left: 60px;  /* clear of language toggle */
+  margin-top: 36px; /* push below the toggle + close button row */
   margin-bottom: 24px;
   text-align: left;
 }
