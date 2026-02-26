@@ -1970,10 +1970,45 @@ body.promo-open { overflow: hidden; }
   outline-offset: 2px;
 }
 
+/* ── Language toggle inside modal ────────────────────────────────── */
+.promo-lang-toggle {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.promo-lang-toggle .lang-btn {
+  background: none;
+  border: none;
+  padding: 4px 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: color 0.2s;
+  line-height: 1;
+}
+.promo-lang-toggle .lang-btn[aria-pressed="true"] {
+  color: var(--orange);
+}
+.promo-lang-toggle .lang-btn:hover {
+  color: var(--white);
+}
+.promo-lang-toggle .lang-sep {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.7rem;
+  line-height: 1;
+}
+
 /* ── Modal header ────────────────────────────────────────────────── */
 .promo-modal-header {
   padding-right: 44px; /* clear of absolute close button */
+  padding-left: 60px;  /* clear of language toggle */
   margin-bottom: 24px;
+  text-align: left;
 }
 .promo-modal-header .label {
   display: inline-flex;

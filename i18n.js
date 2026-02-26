@@ -249,9 +249,9 @@
         faqA6: "Yes. We offer maintenance plans, SEO monitoring, content updates, and ongoing design work. We're a long-term partner, not a one-and-done shop.",
       },
       promo24h: {
-        badge: "24H PROMO",
-        title: "Your business website in 24 hours.",
-        sub: "A simple, conversion-ready site built fast. Time starts once we receive the minimum required content.",
+        badge: "Limited time offer",
+        title: "Get a new website for free in 24H.",
+        sub: "Fill the form below to enter the contest for a chance to get a new website for your business.",
         step1Title: "Your business",
         businessNameLabel: "Business / Client name *",
         businessNamePlaceholder: "e.g., Smart Lifestyle",
@@ -415,9 +415,9 @@
     },
   });
   Object.assign(DICTIONARY.es.promo24h, {
-    badge: "PROMO 24H",
-    title: "Tu web de negocio en 24 horas.",
-    sub: "Una web lista para convertir, construida rápido. El tiempo empieza cuando recibimos lo mínimo necesario.",
+    badge: "Oferta por tiempo limitado",
+    title: "Gana un sitio web gratis para tu negocio.",
+    sub: "Llena el formulario para participar en el concurso y ganar un sitio web para tu negocio.",
     step1Title: "Tu negocio",
     businessNameLabel: "Nombre del negocio / cliente *",
     businessNamePlaceholder: "Ej.: Smart Lifestyle",
