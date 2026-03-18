@@ -17,7 +17,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // -----------------------------------------------
   // GSAP — Hero intro + circle micro-float
   // -----------------------------------------------
+
+  // Fallback: if GSAP never loads, hero elements must still be visible.
+  // We schedule a safety reveal after 800ms so users never see a blank hero.
+  const heroFallbackTimer = setTimeout(() => {
+    document.querySelectorAll('.hero-title, .hero-desc, .hero-actions, .hero-eyebrow, .hero-ring-img')
+      .forEach(el => { el.style.opacity = '1'; el.style.transform = 'none'; });
+  }, 800);
+
   if (typeof gsap !== 'undefined') {
+    clearTimeout(heroFallbackTimer);
     const heroTitle = document.querySelector('.hero-title');
     const heroDesc  = document.querySelector('.hero-desc');
     const heroActions = document.querySelector('.hero-actions');
