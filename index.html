@@ -66,6 +66,9 @@
   <!-- Preload LCP hero image -->
   <link rel="preload" as="image" href="hero-ring.webp" fetchpriority="high" />
 
+  <!-- Preload GSAP to avoid blocking hero animation -->
+  <link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" crossorigin />
+
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
@@ -308,16 +311,16 @@
       <!-- Left: copy -->
       <div class="container" style="display:contents;">
         <div class="hero-left">
-          <div class="hero-eyebrow fade-up" style="margin-bottom:28px;">
+          <div class="hero-eyebrow" style="margin-bottom:28px;">
             <div class="hero-eyebrow-dot" aria-hidden="true"></div>
             <span class="label" data-i18n="index.heroEyebrow">Miami Marketing Agency</span>
           </div>
 
-          <h1 class="display-xl hero-title fade-up stagger-1" id="heroHeading" data-i18n-html="index.heroTitle">We build<br />brands that<br /><em>mean business.</em></h1>
+          <h1 class="display-xl hero-title" id="heroHeading" data-i18n-html="index.heroTitle">We build<br />brands that<br /><em>mean business.</em></h1>
 
-          <p class="hero-desc fade-up stagger-2" data-i18n="index.heroDesc">Website development &amp; brand identity design for South Florida companies ready to grow.</p>
+          <p class="hero-desc" data-i18n="index.heroDesc">Website development &amp; brand identity design for South Florida companies ready to grow.</p>
 
-          <div class="hero-actions fade-up stagger-3">
+          <div class="hero-actions">
             <a href="work.html" class="btn btn-primary" data-i18n="index.heroCtaWork">See Our Work</a>
             <a href="contact.html" class="btn btn-outline" data-i18n="index.heroCtaStart">Start a Project</a>
           </div>
@@ -328,7 +331,7 @@
           <img
             src="hero-ring.webp"
             alt="DeepFrame Media — bold brand visual"
-            class="hero-ring-img fade-in stagger-2"
+            class="hero-ring-img"
             width="560"
             height="560"
             fetchpriority="high"

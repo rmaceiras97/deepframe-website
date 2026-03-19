@@ -37,7 +37,7 @@
 
     /* ── Constants ─────────────────────────────────────────────────── */
     const STORAGE_KEY = 'df_promo24h_seen';
-    const OPEN_DELAY  = 1000;  // ms before auto-open
+    const OPEN_DELAY  = 4000;  // ms before auto-open
     const CLOSE_ANIM  = 220;   // ms — matches CSS .promo-closing duration
 
     /* ── State ─────────────────────────────────────────────────────── */
